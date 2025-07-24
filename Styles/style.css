@@ -3,6 +3,8 @@
 *{
     box-sizing: border-box;
     font-family: "Noto Serif", serif, "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .container{
     width: 1140px;
@@ -174,6 +176,54 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.trusted-container{
+    max-height: 590px;
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 60px;
+    margin-top: 200px;
+}
+.trusted-container-img{
+    width: 65vw;
+    height: 590px;
+    background-image: url("../assets/flower-store.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+.trusted-container-img img{
+    width: 286px;
+    height: 286px;
+    position: relative;
+    top: -132px;
+    left: 74%;
+}
+.trusted-container-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+    margin-bottom: 38px;
+    margin-top: 38px;
+}
+.trusted-container-content h3{
+    font-size: 50px;
+    text-align: left;
+    font-weight: bold;
+}
+.trusted-container-content p{
+    font-size: 22px;
+    color: #adabab;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+.trusted-container-content li{
+    margin-bottom: 20px;
+}
 @media screen and (max-width: 576px){
     
     .logo{
@@ -212,13 +262,23 @@
         font-size: 14px;
     }
     .hero-right img{
-        width: 100%;
+        width: 99%;
         height: auto;
     }
     .hero-right img{
         width: 100%;
         height: auto;
     }
+    .cards-container{
+        width: 97vw;
+        margin: 0 auto;
+    }
+    .cards{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
 }
 
  .hide{
