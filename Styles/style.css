@@ -371,6 +371,7 @@
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border: none;
+    cursor: pointer;
 }
 .main-footer{
     max-width: 100vw;
