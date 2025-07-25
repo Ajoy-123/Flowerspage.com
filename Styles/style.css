@@ -296,18 +296,10 @@
 }
 
 .overlay-bg {
-    /* max-width: 100VW; */
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
-}
-.img-1,.img-2,.deals-img-container-right{
-    color: #fff;
-}
-.img-1 a,.img-2 a,.deals-img-container-right a{
-    color: #fff;
 }
 .overlay-bg::before {
     content: "";
@@ -317,22 +309,28 @@
     z-index: 1;
     border-radius: 15px;
 }
-
 .overlay-bg > * {
     position: relative;
     z-index: 2;
 }
+.img-1,.img-2,.deals-img-container-right{
+    color: #fff;
+}
+.img-1 a,.img-2 a,.deals-img-container-right a{
+    color: #fff;
+}
+
 .newsletter-container{
     max-width: 100vw;
     height: auto;
     margin-top: 100px;
-     background-image: url("../assets/news-letter-bg.png");
+    background-image: url("../assets/news-letter-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .newsletter-inp{
     width: 100%;
-    min-height: 300px;
+    min-height: 400px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -368,10 +366,57 @@
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border: none;
-    
+}
+.main-footer{
+    max-width: 100vw;
+    height: auto;
+    margin: 50px;
+}
+.footer{
+    display: flex;
+    gap: 100px;
+    /* justify-content: center;
+    align-items: center; */
+    flex: 1;
+    /* margin: 50px; */
+}
+.logo-desc{
+    max-width: 359px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.logo-desc img{
+    width: 135px;
+    height: 82px;
+}
+.logo-desc p{
+    font-size: 22px;
+    color: #636060;
+}
+.html-links-list{
+    list-style: none;
+    font-size: 20px;
+    color: #636060;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.html-links-list a{
+    text-decoration: none;
+    color: #636060;
+    font-size: 20px;
+}
+.social-links{
+    display: flex;
+    gap: 20px;
+}
+.twitter-icon{
+    width: 30px;
+    height: 30px;
+
 }
 @media screen and (max-width: 576px){
-    
     .logo{
         width: 100vw;
         display: flex;
@@ -512,8 +557,20 @@
     border-bottom-left-radius: 0px;
     border: none;
     }
-}
-
- .hide{
-        display: none;
+    .footer{
+        max-width: 87vw;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
     }
+    .logo-desc{
+        margin-bottom: 20px;
+        max-width: 100vw;
+    }
+    .logo-desc p{
+        font-size: 16px;
+    }
+    .html-links{
+        margin-bottom: 20px;
+    }
+}
