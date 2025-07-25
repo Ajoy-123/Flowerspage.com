@@ -527,8 +527,8 @@
     .deals-img-container-right {
     width: 94vw !important;
     height: auto;
-    min-height: 250px; /* optional: to maintain some height */
-  }
+    min-height: 250px;
+    }
     .img-container h3{
         font-size: 20px;
     }
@@ -556,6 +556,9 @@
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border: none;
+    }
+    .main-footer{
+        margin-left: 20px;
     }
     .footer{
         max-width: 87vw;
